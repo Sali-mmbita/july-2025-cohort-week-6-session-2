@@ -38,6 +38,22 @@
             <button onclick="previousImage()">Previous</button>
             <button onclick="nextImage()">Next</button>
         </div>
+        <!-- Form Validation -->
+         <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name">
+            <span id="nameError" class="error"></span>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" >
+            <span id="emailError" class="error"></span>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password">
+            <span id="passwordError" class="error"></span>
+            <br>
+            <button type="submit">Submit</button>
+         </form>
     <!-- DOM property -->
     <script src="scripts/script.js"></script>
 </body>
