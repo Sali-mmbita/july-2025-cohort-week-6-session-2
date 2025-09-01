@@ -34,3 +34,32 @@ inputField.addEventListener("input", function() {
 inputField.addEventListener("keydown", function(event) {
     console.log("Key down: " + event.key);
 });
+
+function toggleAccordion(button){
+    let content = button.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+}
+
+let images = [
+    "images/image-2.jpg",
+    "images/image-3.jpg",
+    "images/image-1.jpg"
+]
+
+let currentIndex = 0;
+
+function showImage(){
+    document.getElementById("carouselImage").src = images[currentIndex];
+}
+
+function nextImage(){
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage();
+}
+
+function previousImage(){
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage();
+}
+
+setInterval(nextImage, 3000); // Change image every 3 seconds
