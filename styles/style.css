@@ -31,3 +31,10 @@ img{
     height: 250px;
     margin: 0 auto;
 }
+
+input{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
